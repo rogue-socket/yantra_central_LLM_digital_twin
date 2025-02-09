@@ -2,6 +2,7 @@
 
 This project is a streamlined AI-powered application utilizing a **Large Language Model (LLM)** to facilitate **water management system simulations** for a digital twin. Built using the **Google API**, this system allows users to interact naturally with the model, request simulations, analyze past runs, and receive intelligent responses to general queries regarding water management systems.  
 
+Deployed Link: https://yantradigitaltwin.streamlit.app/
 
 # 📌 Important Notes  
 
@@ -89,4 +90,4 @@ This project is licensed under the MIT License. See LICENSE for details.
 
 ---
 
-Developed with ❤️ using LLM & Google API for smart water management.
+Developed with ❤️ using Google LLM & Langgraph for digital twin water management.
