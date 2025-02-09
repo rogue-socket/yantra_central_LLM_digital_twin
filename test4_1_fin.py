@@ -5,11 +5,13 @@ from langgraph.graph import StateGraph, END, add_messages
 from typing import Literal, TypedDict, Annotated, Optional
 from typing_extensions import Annotated, TypedDict
 from langgraph.checkpoint.memory import MemorySaver
+import streamlit as st
 import json
 import re
 
-load_dotenv()
-llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
+# load_dotenv()
+api_key = st.secrets["GOOGLE_API_KEY"]
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=api_key)
 
 # Confirm decision chain
 decision_prompt = PromptTemplate(
