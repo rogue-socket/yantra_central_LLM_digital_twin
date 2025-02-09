@@ -2,6 +2,19 @@
 
 This project is a streamlined AI-powered application utilizing a **Large Language Model (LLM)** to facilitate **water management system simulations** for a digital twin. Built using the **Google API**, this system allows users to interact naturally with the model, request simulations, analyze past runs, and receive intelligent responses to general queries regarding water management systems.  
 
+
+# 📌 Important Notes  
+
+1. The code is currently modified to suit the running of a **Streamlit application**.  
+   - This can be changed by loading the API key into the environment and **uncommenting** the following line of code:  
+     ```python
+     load_dotenv()
+     ```
+
+2. The **simulation engine** is an external factor.  
+   - The code for the simulation exists in the file **"test4_1_fin.py"**, but it needs to be **interfaced using a JSON file address**.  
+   - Currently, the output is **hardcoded** to demonstrate the functionality of other components. 
+
 ## 🚀 Features  
 
 ### 1️⃣ Smart Simulation Execution  
@@ -61,7 +74,7 @@ streamlit run chatbot.py
 > Run a water simulation where the water speed is 5m/s
 > What are common water management issues?  
 > Analyze the last simulations
-```
+``` 
 
 ## 🔗 Future Enhancements  
 - Integration with real-time digital twin water management data  
